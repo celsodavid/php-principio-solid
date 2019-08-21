@@ -3,7 +3,7 @@
 
 namespace CESANTOS\PHPSOLID\ISP;
 
-class Pato implements Aves
+class Pato implements AvesQueVoam, AvesQueNadam
 {
     public function andar()
     {

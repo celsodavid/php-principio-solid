@@ -3,7 +3,7 @@
 
 namespace CESANTOS\PHPSOLID\ISP;
 
-class Andorinha implements Aves
+class Andorinha implements AvesQueVoam
 {
     public function andar()
     {
@@ -13,10 +13,5 @@ class Andorinha implements Aves
     public function voar()
     {
         // TODO: Implement voar() method.
-    }
-
-    public function nadar()
-    {
-        // TODO: Implement nadar() method.
     }
 }
