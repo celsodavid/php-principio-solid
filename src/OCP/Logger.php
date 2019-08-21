@@ -5,13 +5,15 @@ namespace CESANTOS\PHPSOLID\OCP;
 
 class Logger
 {
-    public function writeTxt($message)
+    private $logger;
+
+    public function __construct(Writer $writer)
     {
-        // logica
+        $this->logger = $writer;
     }
 
-    public function writeCsv($message)
+    public function writer($message)
     {
-        // logica
+        return $this->logger->write($message);
     }
 }
