@@ -5,9 +5,9 @@ namespace CESANTOS\PHPSOLID\DIP;
 
 class Notificacao
 {
-    public function __construct()
+    public function __construct(MensagemInterface $mensagem)
     {
-        $this->message = new Email();
+        $this->message = $mensagem;
     }
 
     public function enviar($message)

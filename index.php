@@ -2,6 +2,8 @@
 
 require 'vendor/autoload.php';
 
+use CESANTOS\PHPSOLID\DIP\Email;
+use CESANTOS\PHPSOLID\DIP\Notificacao;
 use CESANTOS\PHPSOLID\LSP\DataBase;
 use CESANTOS\PHPSOLID\LSP\FileLogger;
 use CESANTOS\PHPSOLID\LSP\DatabaseLogger;
@@ -33,3 +35,5 @@ $databaseLogger->writer('meu log');
 # Interface segregation principle(Princípio da Segregação da Interface)
 
 # Dependency inversion principle (Princípio da inversão da dependência)
+$notificacao = new Notificacao(new Email());
+$notificacao->enviar('minha mensagem');

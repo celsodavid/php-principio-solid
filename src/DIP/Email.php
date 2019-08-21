@@ -3,10 +3,10 @@
 
 namespace CESANTOS\PHPSOLID\DIP;
 
-class Email
+class Email implements MensagemInterface
 {
     public function enviar($message)
     {
-        //logica
+        echo $message . __CLASS__;
     }
 }
