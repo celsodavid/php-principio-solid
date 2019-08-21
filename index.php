@@ -31,3 +31,5 @@ $databaseLogger = new DatabaseLogger(new DataBase());
 $databaseLogger->writer('meu log');
 
 # Interface segregation principle(Princípio da Segregação da Interface)
+
+# Dependency inversion principle (Princípio da inversão da dependência)
