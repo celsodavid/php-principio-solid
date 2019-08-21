@@ -1,0 +1,17 @@
+{
+    "name": "cesantos/php-solid",
+    "license": "MIT",
+    "description": "Exemplos de de SOLID com PHP",
+    "authors": [
+        {
+            "name": "Celso David Lopes dos Santos",
+            "email": "celunico43@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CESANTOS\\PHPSOLID\\": "src/"
+        }
+    }
+}
