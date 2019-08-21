@@ -1,6 +1,6 @@
 <?php
 
-namespace CESANTOS\PHPSOLID;
+namespace CESANTOS\PHPSOLID\SRP;
 
 class Report
 {
@@ -20,10 +20,5 @@ class Report
             'title' => $this->getTitle(),
             'date' => $this->getDate()
         ];
-    }
-
-    public function formatJson()
-    {
-        return json_encode($this->getContent());
     }
 }
