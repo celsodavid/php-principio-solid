@@ -29,3 +29,5 @@ $fileLogger->writer('meu log');
 
 $databaseLogger = new DatabaseLogger(new DataBase());
 $databaseLogger->writer('meu log');
+
+# Interface segregation principle(Princípio da Segregação da Interface)
